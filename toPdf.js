@@ -3,7 +3,7 @@ window.onload = function() {
         .addEventListener("click", () => {
             let delt = document.getElementsByClassName("fc-header-toolbar fc-toolbar fc-toolbar-ltr")[0];
             delt.style.visibility = "hidden";
-            const calendar = this.document.getElementById("calendar");
+            const calendar = this.document.getElementById("cal");
             let titre = document.getElementsByTagName("h2")[0];
             calendar.appendChild(titre);
             calendar.insertBefore(titre, calendar.firstChild);
@@ -15,7 +15,7 @@ window.onload = function() {
                 html2canvas: { scale: 2 },
                 jsPDF: { unit: 'cm', format: [27, 32], orientation: 'landscape' }
             };
-            //html2pdf().from(calendar).set(opt).save();
+            html2pdf().from(calendar).set(opt).save();
             setTimeout(() => {
                 delt.style.visibility = "visible";
             }, 2000);
