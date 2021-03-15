@@ -15,7 +15,7 @@ window.onload = function() {
                 html2canvas: { scale: 2 },
                 jsPDF: { unit: 'cm', format: [27, 32], orientation: 'landscape' }
             };
-            html2pdf().from(calendar).set(opt).save();
+            //html2pdf().from(calendar).set(opt).save();
             setTimeout(() => {
                 delt.style.visibility = "visible";
             }, 2000);
