@@ -7,7 +7,6 @@ window.onload = function() {
             let titre = document.getElementsByTagName("h2")[0];
             calendar.appendChild(titre);
             calendar.insertBefore(titre, calendar.firstChild);
-            console.log(calendar);
-            console.log(window);
+
    
 }
